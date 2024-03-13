@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="background-image"></div>
+            <div class="profile-picture">
+                <img src="./images/profile.jpeg" alt="Profile Picture">
+            </div>
+            <div class="about-text">
+                <h2 style="margin_bottom:15px;">Malik Abdul Salam (Certified AI Developer)</h2>
+                <h3></h3>
+                <p>With expertise spanning Artificial Intelligence, Geographic Information Systems, Computer Vision, and Bots development, my portfolio showcases a versatile skill set tailored for innovative problem-solving. Leveraging cutting-edge technologies, I specialize in creating solutions that bridge the gap between data analysis, spatial intelligence, and automated systems, delivering impactful results in diverse domains. Let's collaborate to turn your challenges into opportunities for technological advancement and operational efficiency.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!--    <section id="projects">-->
+<!--    <div class="container">-->
+<!--        <h2>Projects</h2>-->
+<!--        <div class="project project1">-->
+<!--            <div class="project-images">-->
+<!--                &lt;!&ndash; Add multiple images for Project 1 &ndash;&gt;-->
+<!--                <img src="./images/audio.png" alt="Project 1 Image 1">-->
+<!--                <img src="./images/audio.png" alt="Project 1 Image 2">-->
+<!--                &lt;!&ndash; Add more images here &ndash;&gt;-->
+<!--            </div>-->
+<!--            <div class="project-description">-->
+<!--                <h3>Project 1</h3>-->
+<!--                <p>With expertise spanning Artificial Intelligence, Geographic Information Systems, Computer Vision, and Bots development, my portfolio showcases a versatile skill set tailored for innovative problem-solving. Leveraging cutting-edge technologies, I specialize in creating solutions that bridge the gap between data analysis, spatial intelligence, and automated systems, delivering impactful results in diverse domains. Let's collaborate to turn your challenges into opportunities for technological advancement and operational efficiency.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="project project2">-->
+<!--            <div class="project-description">-->
+<!--                <h3>Project 2</h3>-->
+<!--                <p>Description of Project 2...</p>-->
+<!--            </div>-->
+<!--            <div class="project-images">-->
+<!--                &lt;!&ndash; Add multiple images for Project 2 &ndash;&gt;-->
+<!--                <img src="./images/image_comparison.png" alt="Project 2 Image 1">-->
+<!--                <img src="./images/image_comparison2.png" alt="Project 2 Image 2">-->
+<!--                &lt;!&ndash; Add more images here &ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Add more projects here &ndash;&gt;-->
+<!--    </div>-->
+<!--</section>-->
+
+
+    <section id="projects">
+    <div class="container">
+        <h2 style="color: green; font-size: 40px; ">Products Delivered</h2>
+        <div class="project project1">
+            <div class="project-images">
+                <!-- Add multiple images for Project 1 -->
+                <img style="border: 8px solid Goldenrod;" src="./images/audio.png" alt="Project 1 Image 1">-->
+                <img style="border: 8px solid Goldenrod;" src="./images/audio2.png" alt="Project 1 Image 2">
+                <!-- Add more images here -->
+            </div>
+            <div class="project-description">
+                <h3 style="color : Maroon; font-size : 30px; ">Audio Feature extraction for Horse Race winning prediction</h3>
+                <p>In a recent project, I spearheaded the development of a multifaceted audio analysis system utilizing Python and librosa. Seamlessly integrating recorded and live audio inputs, alongside crafting a robust front end, I implemented cutting-edge machine learning algorithms to extract key features and predict horse race outcomes. This endeavor underscores my proficiency in leveraging technology to tackle complex challenges, merging expertise in audio processing and predictive analytics to deliver actionable insights in dynamic environments.</p>
+            </div>
+        </div>
+        <div class="project project2">
+            <div class="project-description">
+                <h3 style="color : Maroon; font-size : 30px; ">Image Comparison</h3>
+                <p>In this project, I conducted a comprehensive comparison between two images, employing advanced image processing techniques. Leveraging Python and specialized libraries such as OpenCV, I meticulously analyzed the visual content of each image, exploring factors like color distribution, shape similarities, and structural features. By implementing algorithms for image similarity assessment, I provided quantitative insights into the degree of resemblance or dissimilarity between the images, enabling informed decision-making in various domains such as content moderation, image retrieval, and quality control. This project underscores my proficiency in image analysis and my ability to extract meaningful insights from visual data through computational methods.</p>
+            </div>
+            <div class="project-images">
+                <!-- Add multiple images for Project 2 -->
+                <img style="border: 8px solid Goldenrod;" src="./images/image_comparison.png" alt="Project 2 Image 1">-->
+                <img style="border: 8px solid Goldenrod;" src="./images/image_comparison2.png" alt="Project 2 Image 2">
+                <!-- Add more images here -->
+            </div>
+        </div>
+        <!-- Add more projects here -->
+    </div>
+</section>
+
+<script>
+
+    document.querySelectorAll('.project-images').forEach(images => {
+    let imageIndex = 0;
+    const totalImages = images.children.length;
+
+    setInterval(() => {
+        images.children[imageIndex].style.display = 'none';
+        imageIndex = (imageIndex + 1) % totalImages;
+        images.children[imageIndex].style.display = 'block';
+    }, 3000); // Change images every 3 seconds
+});
+
+</script>
+
+
+
+
+    <section id="contact">
+        <div class="container">
+            <h2 style="color: BlanchedAlmond; font-size: 40px; ">Contact Me</h2>
+            <p style="color: BlanchedAlmond; font-size: 20px; ">bilgates506@gmail.com</p>
+            <p style="color: BlanchedAlmond; font-size: 20px; ">+923122626152</p>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Malik Abdul Salam</p>
+        </div>
+    </footer>
+
+</body>
+</html>
